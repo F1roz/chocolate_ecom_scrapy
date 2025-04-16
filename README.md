@@ -2,7 +2,7 @@
 
 This project is a web scraping solution developed using **Scrapy** to collect data from the website [https://www.chocolate.co.uk/collections/all](https://www.chocolate.co.uk/collections/all). The scraped data includes chocolate product names, prices, and URLs, which are then processed and stored in a MySQL or Postgres database.
 
-The scraper uses proxy rotation and user agent handling to bypass any anti-scraping measures, ensuring a smooth scraping process.
+I used proxy rotation and user agent handling to bypass any anti-scraping measures, ensuring a smooth scraping process.
 
 ## **Features**
 
@@ -105,7 +105,7 @@ chocolate-scraper/
 
 ## **Challenges Faced**
 
-- **Proxy Rotation**: Initially, the scraper faced issues with IP blocking due to frequent requests. This was resolved by using **ScraperAPI** for proxy rotation.
+- **Proxy Rotation**: Initially, I faced issues with IP blocking due to frequent requests. This was resolved by using **ScraperAPI** for proxy rotation.
 - **Pagination Handling**: Ensuring the spider handled pagination properly to scrape all products across multiple pages was challenging. This was addressed by implementing logic to follow the "next" page links.
 - **Data Cleaning**: Raw product data required cleaning (e.g., removing currency symbols from price). The `ItemLoader` helped efficiently clean and structure the data.
 - **Database Storage**: Ensuring the data was stored correctly in both MySQL and Postgres databases required setting up the database connection and creating the appropriate tables.
