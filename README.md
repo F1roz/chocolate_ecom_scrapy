@@ -1,7 +1,3 @@
-Here's a comprehensive README file for your GitHub repository:
-
----
-
 # **Chocolate Scraping Project**
 
 This project is a web scraping solution developed using **Scrapy** to collect data from the website [https://www.chocolate.co.uk/collections/all](https://www.chocolate.co.uk/collections/all). The scraped data includes chocolate product names, prices, and URLs, which are then processed and stored in a MySQL or Postgres database.
